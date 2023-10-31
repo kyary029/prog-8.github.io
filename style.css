@@ -1,0 +1,414 @@
+header{
+    background-color:#543618;
+    color: #543618;
+}
+
+h1{
+    margin:0px;
+}
+
+main{
+    background-color: #FFFAF0;
+    height: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+img#shark{
+  max-width: 100%;
+}
+
+img#cake{
+  width: 10%;
+  position: relative;
+  left:77%;
+  margin-top:2%;
+}
+
+div#checkList{
+    margin-top: 10%;
+    margin-bottom: 6%;
+    margin-left: 22%;
+    text-align: center;
+    font-family: "Dela Gothic One";
+    font-weight: bold;
+    color: #996666;
+    border-bottom:dashed 2px  #543618;
+    padding-bottom: 2%;
+    width: 60%;
+}
+
+/* チェックボッス全体 */
+div#checkBox{
+    text-align: center;
+    margin-right: 5px;
+    margin-top: 1%;
+}
+
+span.checkmark{
+    text-align: center;
+    margin-left: 40%;
+}
+
+.checknox-wrap {
+    display: block;
+    position: relative;
+    padding-left: 10%;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    user-select: none;
+    font-weight: bold;
+    color: #996666;
+  }
+  
+  /* デフォルトチェックボックス非表示 */
+  .checknox-wrap input {
+    display: none;
+  }
+  
+  /* チェックボックスのスタイル */
+  .checknox-wrap .checkmark {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #999999;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  
+  /* チェックマーク作成 */
+  .checknox-wrap .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 4px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: 2px solid #FFF;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  /* チェック時のスタイル */
+  .checknox-wrap input:checked + .checkmark {
+    background-color: #0070bd;
+    border: 2px solid #0070bd;
+  }
+  
+  /* チェック時 チェックマーク表示 */
+  .checknox-wrap input:checked + .checkmark:after {
+    display: block;
+  }
+
+table#kk{
+  margin: auto;
+}
+
+/* 準備完了ボタン */
+button#button_solid0172 {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    font-weight: bold;
+    padding: 11px 72px;
+    color: #eeee;
+    transition: 0.3s ease-in-out;
+    font-size: 110%;
+    background: #543618;
+    border-radius: 50px;
+    border: 0.2rem solid #eeee;
+    box-shadow: 0.2rem 0.2rem 0px 0.1rem #cccccc;
+    text-decoration: none;
+    margin-top: 10%;
+}
+button#button_solid0172 :hover {
+  transform: translate3d(0.2rem, 0.2rem, 0);
+  box-shadow: none;
+  opacity: 1;
+  transition: all 0.2s;
+}
+button#button_solid0172:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #eeee;
+    border-right: 3px solid #eeee;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+/* イベント */
+div#eventTitle{
+    text-align: center;
+    font-family: "Dela Gothic One";
+    font-weight: bold;
+    color: #996666;
+    margin-top: 13%;
+    margin-left: 26%;
+    margin-bottom: 7%;
+    padding: 0.2em 0.5em;
+    width: 45%;
+    padding-bottom: 2%;
+    border-bottom:dashed 2px  #543618;
+  }
+
+  div.AllQuestion{
+    background-color: #FFF;
+    border: #543618;
+    width: 80%;
+    height: 100px;
+    margin-top: 8%;
+    margin-left: 10%;
+    border-radius: 20px;
+    border-width:2px;
+    text-align: center;
+    color: #996666;
+    font-weight: bold;
+    font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+    position: relative;
+  }
+
+  span#sample{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 90%;
+  width: max-content;
+  }
+
+  /* ボタンをtableでまとめた */
+  table#event{
+    margin: auto;
+    font-family: "Dela Gothic One";
+    margin-top: 5%;
+    font-weight: bold;
+    color: #996666;
+    margin-bottom: 10%;
+}
+  
+  /* Yesボタン */
+  button#button_solid017 {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    font-weight: bold;
+    padding: 11px 72px;
+    color: #eeee;
+    transition: 0.3s ease-in-out;
+    font-size: 110%;
+    background: #543618;
+    border-radius: 50px;
+    border: 0.2rem solid #eeee;
+    box-shadow: 0.2rem 0.2rem 0px 0.1rem #cccccc;
+    text-decoration: none;
+}
+button#button_solid017 :hover {
+  transform: translate3d(0.2rem, 0.2rem, 0);
+  box-shadow: none;
+  opacity: 1;
+  transition: all 0.2s;
+}
+button#button_solid017:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #eeee;
+    border-right: 3px solid #eeee;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+  
+/* Noボタン */
+button#button_solid0178 {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  font-weight: bold;
+  padding: 11px 80px;
+  color: #543618;
+  transition: 0.3s ease-in-out;
+  font-size: 110%;
+  background: #eeee;
+  border-radius: 50px;
+  border: 0.2rem solid #543618;
+  box-shadow: 0.2rem 0.2rem 0px 0.1rem #cccccc;
+  text-decoration: none;
+  margin-top: 2%;
+}
+button#button_solid0178 :hover {
+transform: translate3d(0.2rem, 0.2rem, 0);
+box-shadow: none;
+opacity: 1;
+transition: all 0.2s;
+}
+button#button_solid0178:after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #543618;
+  border-right: 3px solid #543618;
+  transform: rotate(45deg) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  border-radius: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.Day1{
+  margin-top:5% ;
+}
+
+/* アコーディオンメニュー */
+.accordion-008 {
+  /* padding: 11px 72px; */
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  box-shadow: 0 7px 15px -5px rgb(0 0 0 / 5%);
+  background-color: #996666;
+  border: 0.2rem solid white;
+  font-weight: bold;
+  box-shadow: 0.2rem 0.2rem 0px 0.1rem #cccccc;
+  font-size: 90%;
+}
+
+.accordion-008 summary {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 11px 72px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin: auto;
+}
+.accordion-008 summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-008 summary::after {
+  /* transform: translateY(-25%) rotate(45deg);
+  width: 7px;
+  height: 7px;
+  margin-left: 50%;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  content: '';
+  transition: transform .3s; */
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  transform: rotate(317deg) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  border-radius: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.accordion-008[open] summary::after {
+  transform: rotate(138deg);
+}
+
+/* 評価 */
+.rate-form {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.rate-form input[type=radio] {
+  display: none;
+}
+.rate-form label {
+  position: relative;
+  padding: 0 5px;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 35px;
+}
+.rate-form label:hover {
+  color: #B8143C;
+}
+.rate-form label:hover ~ label {
+  color: #B8143C;
+}
+.rate-form input[type=radio]:checked ~ label {
+  color: #B8143C;
+}
+
+/* 評価完了ボタン */
+button#button_solid0 {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  font-weight: bold;
+  padding: 11px 65px;
+  color: #eeee;
+  font-size: 110%;
+  transition: 0.3s ease-in-out;
+  background: #543618;
+  border-radius: 50px;
+  border: 0.2rem solid #eeee;
+  box-shadow: 0.2rem 0.2rem 0px 0.1rem #cccccc;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 5%;
+}
+button#button_solid0 :hover {
+transform: translate3d(0.2rem, 0.2rem, 0);
+box-shadow: none;
+opacity: 1;
+transition: all 0.2s;
+}
+button#button_solid0 :after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #eeee;
+  border-right: 3px solid #eeee;
+  transform: rotate(45deg) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  border-radius: 1px;
+}
+
+.rate-form{
+ margin-left: 20%;
+}
+
+#a{
+  color: #FFFAF0;
+}
+.main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+h2{
+  margin-bottom: 10%;
+}
+#b{
+  background-color: #543618;
+}
